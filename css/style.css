@@ -367,7 +367,7 @@ color: #FFFFFF;
     }
 }
 
-  @media screen and (max-width: 360px) { 
+  @media screen and (max-width: 460px) { 
     .info__href{
         display: none;
     }
