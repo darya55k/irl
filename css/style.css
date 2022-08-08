@@ -140,19 +140,21 @@ box-shadow: 0px 4.20233px 7.5642px rgba(0, 0, 0, 0.25);
     text-decoration: none;
     font-family: 'Poppins';
     
-    background-color: #FF2E47;
+    background-color: transparent;
+    border-style: none;
+    
     border-radius: 30px;
     color: white;
     font-family: 'Jost';
 font-style: normal;
 font-weight: 800;
 font-size: 27.3418px;
-line-height: 112%;
+line-height: 129%;
     text-transform: uppercase;
-    color: #FFFFFF;
-    padding: 6px 46px;
+    background-color: #FF2E47;
+    padding: 6px 0;
+    width: 208px;
     
-    border-style: none;
     margin: 0 auto;
     margin-top: 5vh;
     margin-right: 12px;
@@ -178,7 +180,8 @@ font-size: 27.3418px;
 line-height: 112%;
     text-transform: uppercase;
     color: #FFFFFF;
-    padding: 6px 46px;
+    padding: 6px 0;
+    width: 208px;
     
     
     margin: 0 auto;
@@ -299,9 +302,11 @@ line-height: 112%;
     }
     .info__button-sign{
         font-size: 21px;
+        width: 185px;
     }
     .info__button-log{
         font-size: 21px;
+        width: 185px;
     }
   }
 
