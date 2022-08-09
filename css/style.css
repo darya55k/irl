@@ -90,7 +90,7 @@ text-align: center;
 /* identical to box height */
 
 text-decoration-line: underline;
-
+margin: 0 auto;
 color: #FFFFFF;
 z-index: 1;
 }
@@ -126,7 +126,28 @@ border-radius: 42.0233px;
 
     background: radial-gradient(180.45% 180.45% at 50% 8.64%, rgba(254, 95, 114, 0.7) 0%, rgba(121, 0, 0, 0) 100%), #FF2E47;
     box-shadow: 0px 5px 9px rgba(0, 0, 0, 0.25);
-    border-radius: 50px;
+    border-radius: 50px;position: relative; 
+    overflow-x: hidden; 
+}
+.info__button .flare {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 45px;
+    transform: skewX(-45deg); 
+    animation: flareAnimation;
+    left: -150%;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.4));
+    animation: flareAnimation 3s infinite linear; 
+}
+
+@keyframes flareAnimation {
+    0% {
+        left: -150%;
+    }
+    100% {
+        left: 150%;
+    }
 }
 .info__button:hover{
     background: linear-gradient(0deg, #FF001F, #FF001F), radial-gradient(180.45% 180.45% at 50% 8.64%, rgba(255, 1, 47, 0.7) 0%, rgba(255, 0, 0, 0.7) 100%);
